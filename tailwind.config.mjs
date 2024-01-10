@@ -1,0 +1,45 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+	content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+	theme: {
+		fontFamily: {
+			sans: [
+				"-apple-system",
+				"BlinkMacSystemFont",
+				"Segoe UI",
+				"Roboto",
+				"Helvetica Neue",
+				"Arial",
+				"Noto Sans",
+				"sans-serif",
+				"system-ui",
+				"Apple Color Emoji",
+				"Segoe UI Emoji",
+				"Segoe UI Symbol",
+				"Noto Color Emoji",
+				"Inter var",
+				"ui-sans-serif",
+			],
+			serif: [
+				"ui-serif",
+				"Georgia",
+				"Cambria",
+				"Times New Roman",
+				"Times",
+				"serif",
+			],
+			mono: [
+				"ui-monospace",
+				"SFMono-Regular",
+				"Menlo",
+				"Monaco",
+				"Consolas",
+				"Liberation Mono",
+				"Courier New",
+				"monospace",
+			],
+		},
+		extend: {},
+	},
+	plugins: [],
+};
