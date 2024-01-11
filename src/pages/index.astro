@@ -1,22 +1,109 @@
 ---
 import HeaderHomePage from "../components/HeaderHomePage.astro";
 import Layout from "../layouts/Layout.astro";
-import SectionHomePage from "../components/SectionHomePage.astro";
-import SectionModeloS from "../components/SectionModeloS.astro";
+import Section from "../components/Section.astro";
 ---
 <Layout title="LandingPage">
 	<main>
 		<HeaderHomePage />
 		<main class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-m-0">
 			<div class="snap-center">
-				<SectionHomePage />
+				<Section
+				 	title="Tecnoclogía y Desarrollo" 
+					subtitle="Todolo lo que necesitas saber sobre tecnología, Programación front y back, Hardware, Software, Seguridad, Redes, Ciberseguridad"
+					menuColor="#F0E68C"
+					textColor = "red-600">
+					<div slot="footer">
+						<a
+							class="border-[3px] border-white text-sm rounded backdrop-blur-sm font-medium px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+							href="#">Portafolio</a>
+					</div>
+					<video
+							slot="background"
+							class="object-center object-cover h-full w-full"
+							src="/VideoInicial.webm"
+							autoplay
+							loop
+							muted>
+					</video>
+				</Section>	
 			</div>
 			<div class="snap-center">
-				<SectionModeloS />
+				<Section
+					title="PROGRAMACIÓN FRONTEND Y BACKEND" 
+					subtitle="Lenguajes de ultima generación, Frameworks, Librerias, Herramientas, Tecnologías, Metodologías, Patrones de diseño, Arquitecturas, Bases de datos, Servidores, Seguridad, Ciberseguridad"
+					menuColor="#FA8072"
+					textColor = "red-600">
+					<div 
+						slot="footer">
+						<a
+							class="border-[3px] border-white text-sm rounded backdrop-blur-sm font-medium px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+							href="#">Portafolio</a>
+					</div>
+					<video
+						slot="background"
+						class="object-center object-cover h-full w-full"
+						src="/LenguajesProgramacion.webm"
+						autoplay
+						loop
+						muted>
+					</video>
+				</Section>
 			</div>
 			<div class="snap-center">
-				<SectionHomePage />
-			</div>				
+				<Section
+					title="MODELO X" 
+					subtitle="Concertar una prueba de conducción"
+					menuColor="#F0E68C"
+					textColor = "white">
+					<div 
+						slot="footer"
+						class="flex gap-x-4 justify-center">
+						<a
+							class="border-[3px] border-white text-sm rounded backdrop-blur-sm font-medium px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+							href="#">Explorar Inventario</a
+						>
+										<a
+							class="border-[3px] border-white text-sm rounded backdrop-blur-sm font-medium px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+							href="#">Pedido Perzonalizado</a>
+					</div>
+					<video
+						slot="background"
+						class="object-center object-cover h-full w-full"
+						src="/Modelo-x.webm"
+						autoplay
+						loop
+						muted>
+					</video>
+				</Section>
+			</div>
+			<div class="snap-center">
+				<Section
+					title="MODELO 3" 
+					subtitle="Concertar una prueba de conducción"
+					menuColor="#FA8072"
+					textColor = "white">
+					<div 
+						slot="footer"
+						class="flex gap-x-4 justify-center">
+						<a
+							class="border-[3px] border-white text-sm rounded backdrop-blur-sm font-medium px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+							href="#">Explorar Inventario</a
+						>
+										<a
+							class="border-[3px] border-white text-sm rounded backdrop-blur-sm font-medium px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+							href="#">Pedido Perzonalizado</a>
+					</div>
+					<video
+						slot="background"
+						class="object-center object-cover h-full w-full"
+						src="/Model-3.mp4"
+						autoplay
+						loop
+						muted>
+					</video>
+				</Section>
+			</div>							
 		</main>
 		
 	</main>
